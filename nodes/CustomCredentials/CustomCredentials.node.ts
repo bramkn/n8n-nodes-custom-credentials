@@ -6,15 +6,15 @@ import {
 	NodeOperationError,
 } from 'n8n-workflow';
 
-export class ExampleNode implements INodeType {
+export class CustomCredentials implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Example Node',
-		name: 'exampleNode',
+		displayName: 'Custom Credentials',
+		name: 'customCredentials',
 		group: ['transform'],
 		version: 1,
-		description: 'Basic Example Node',
+		description: 'Custom node to add Custom Credentials',
 		defaults: {
-			name: 'Example Node',
+			name: 'Custom Credentials',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
